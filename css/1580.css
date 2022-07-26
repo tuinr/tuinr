@@ -1,0 +1,198 @@
+/*
+ @font-face {
+  font-family: 'font-b';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_amek38m744g.eot'); 
+  src: url('https://at.alicdn.com/t/webfont_amek38m744g.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/webfont_amek38m744g.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_amek38m744g.woff') format('woff'),
+  url('https://at.alicdn.com/t/webfont_amek38m744g.ttf') format('truetype'), 
+  url('https://at.alicdn.com/t/webfont_amek38m744g.svg#思源黑体-粗') format('svg'); 
+}
+
+@font-face {
+  font-family: 'font';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_05c9k7vsd39b.eot');
+  src: url('https://at.alicdn.com/t/webfont_05c9k7vsd39b.eot?#iefix') format('embedded-opentype'), 
+  url('https://at.alicdn.com/t/webfont_05c9k7vsd39b.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_05c9k7vsd39b.woff') format('woff'), 
+  url('https://at.alicdn.com/t/webfont_05c9k7vsd39b.ttf') format('truetype'), 
+  url('https://at.alicdn.com/t/webfont_05c9k7vsd39b.svg#思源黑体-细') format('svg'); 
+}
+ */
+
+ :root {
+    --bg: #f1f1f1;
+    --card_bg: #fff;
+    --btn_bg: #000000;
+    --btn_bg_hover: #4d4d4d;
+    --btn_text: #fff;
+    --text_color_p: #000000;
+    --text_color_a: #000000;
+    --standard: #f1f1f1;
+    --auxiliary: #f8f8f8;
+    --icon-size: 25px;
+    --spacing: -0.5px;
+}
+
+input[type="button"] {
+    border: 0;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    transition: 0.15s all ease-in-out;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: '思源黑体 CN';
+    background: var(--standard);
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    /* background: #0c0c0c; */
+}
+
+.n {
+    display: none;
+}
+
+@media screen and (min-width: 1580px) {
+    input[type="button"] {
+        font-size: 14px;
+        width: 270px;
+        height: 55px;
+    }
+    /*定义滑块颜色、内阴影及圆角*/
+     ::-webkit-scrollbar-thumb {
+        border-radius: 1010px;
+        background-color: #000000;
+        border: solid #e5e5e5 5px;
+    }
+    /*定义两端按钮的样式*/
+     ::-webkit-scrollbar-button {
+        width: 10px;
+    }
+    p {
+        margin: 0;
+    }
+    .titlepage_card {
+        display: inline-block;
+        width: 1370px;
+        height: 715px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        box-sizing: border-box;
+        background: var(--card_bg);
+        white-space: nowrap;
+    }
+    .card_content {
+        width: 100%;
+        height: 100%;
+    }
+    .card_content_title {
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: inline-block;
+        text-align: center;
+    }
+    .card_content_title p {
+        font-weight: 600;
+        font-size: 45px;
+        color: var(--text_color_p);
+        margin-top: 10px;
+        font-family: "font-b" !important;
+    }
+    .card_content_link {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+    .card_content_block {
+        width: 415px;
+        height: 200px;
+        background: var(--auxiliary);
+        margin: 1px;
+        border-radius: 8px;
+        display: inline-block;
+        position: relative;
+    }
+    .card_content_block_text {
+        display: inline-block;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .card_content_block_text p {
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--text_color_p);
+        margin-bottom: 5px;
+        font-family: "font-b" !important;
+    }
+    .card_content_block_text a {
+        letter-spacing: -0.3px;
+        color: var(--text_color_a);
+    }
+    .card_content_block_btn {
+        margin-top: 30px;
+        background: var(--btn_bg);
+        color: var(--btn_text);
+    }
+    .card_content_block_btn:hover {
+        background: var(--btn_bg_hover);
+    }
+    .icon_info {
+        color: var(--text_color_p);
+        fill: currentColor;
+        display: inline-block;
+        width: 40px;
+    }
+    .baffle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 10;
+    }
+    .baffle_text {
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 150%;
+        line-height: 41px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+    #baffle_height {
+        padding: 1px 5px;
+        background: #7c0000;
+        border-radius: 5px;
+    }
+    .bili_btn {
+        background: var(--btn_bg);
+    }
+    .bili_btn:hover {
+        background: #00bbff;
+    }
+    .bili_btn:active {
+        background: #0085b5;
+    }
+}

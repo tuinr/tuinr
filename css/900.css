@@ -1,0 +1,121 @@
+@media screen and (min-width: 900px) and (max-width: 1155px) {
+    input[type="button"] {
+        font-size: 12px;
+        width: 195px;
+        height: 40px;
+    }
+    p {
+        margin: 0;
+    }
+    .titlepage_card {
+        display: inline-block;
+        width: 860px;
+        height: 448px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        box-sizing: border-box;
+        background: var(--card_bg);
+        white-space: nowrap;
+    }
+    .card_content {
+        width: 100%;
+        height: 100%;
+    }
+    .card_content_title {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: inline-block;
+        text-align: center;
+        /* margin-top: 3%; */
+    }
+    .card_content_title p {
+        font-weight: 600;
+        font-size: 35px;
+        color: var(--text_color_p);
+        font-family: "font-b" !important;
+    }
+    .card_content_link {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+    .card_content_block {
+        width: 270px;
+        height: 143px;
+        background: var(--auxiliary);
+        margin: 1px;
+        border-radius: 8px;
+        display: inline-block;
+        position: relative;
+    }
+    .card_content_block_text {
+        display: inline-block;
+        text-align: center;
+        margin-top: 17px;
+    }
+    .card_content_block_text p {
+        font-weight: 600;
+        font-size: 135%;
+        color: var(--text_color_p);
+        font-family: "font-b" !important;
+    }
+    .card_content_block_text a {
+        color: var(--text_color_a);
+    }
+    .card_content_block_btn {
+        margin-top: 15px;
+        background: var(--btn_bg);
+        color: var(--btn_text);
+    }
+    .card_content_block_btn:hover {
+        background: var(--btn_bg_hover);
+    }
+    .icon_info {
+        color: #000000;
+        fill: currentColor;
+        display: inline-block;
+        width: 30px;
+    }
+    .bafflem {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 10;
+    }
+    .baffle_text {
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 150%;
+        line-height: 41px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+    #baffle_height {
+        padding: 1px 5px;
+        background: #7c0000;
+        border-radius: 5px;
+    }
+    .bili_btn {
+        background: var(--btn_bg);
+    }
+    .bili_btn:hover {
+        background: #00bbff;
+    }
+    .bili_btn:active {
+        background: #0085b5;
+    }
+}
